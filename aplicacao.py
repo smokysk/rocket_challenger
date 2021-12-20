@@ -20,7 +20,7 @@ class Aplicacao:
                 func.nome = input("digite seu nome: ")
                 func.salario = float(input("Digite seu salario: "))
                 func.sexo = input("digite seu sexo ")
-                funcionarios.append(str({func.nome, func.salario, func.sexo+'\n'}))
+                funcionarios.append(str({func.nome, func.salario, func.sexo})+'\n')
                 db.salvar_arquivo(funcionarios)
                 if func.sexo == 'M':
                     soma_m += func.salario
